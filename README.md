@@ -1,2 +1,0 @@
-# moderncpp
-Learning modern c++

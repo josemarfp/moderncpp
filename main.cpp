@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    string message = "Hello Linux world!\n";
-    cout << message;
+    cout << "Hello World!" << endl;
     return 0;
 }
