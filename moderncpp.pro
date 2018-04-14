@@ -8,4 +8,5 @@ SOURCES += main.cpp \
 
 HEADERS += \
     cpp_timestamp.hpp \
-    cpp_template.hpp
+    cpp_template.hpp \
+    cpp_map.hpp

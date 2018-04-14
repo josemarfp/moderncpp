@@ -1,6 +1,8 @@
 #include <iostream>
+#include <map>
 #include "cpp_timestamp.hpp"
 #include "cpp_template.hpp"
+#include "cpp_map.hpp"
 
 using namespace std;
 
@@ -20,13 +22,14 @@ int main()
         cout << "1 - Timestamp" << endl;
         cout << "2 - Template" << endl;
         cout << "3 - Template function parameter" << endl;
+        cout << "4 - Map" << endl;
         cin >> choosen;
 
         switch (choosen)
         {
             case 1:
                 main_cpp_timestamp();
-                break;
+                return 0;
             case 2:
             {
                 int a {1};
@@ -44,6 +47,14 @@ int main()
                 cout << "C++ Function template" << endl;
                 cout << c << endl;
                 break;
+            }
+            case 4:
+            {
+                map<double, int> myMap;
+                map_ordering(myMap);
+
+                for (auto it=myMap.rbegin()++; it != myMap.rend(); ++it)
+                    cout << it->second << ":" << it->first << endl;
             }
             default:
                 break;
